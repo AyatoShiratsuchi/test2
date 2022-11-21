@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reminder</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-left">
+	<img class="logo" https://github.com/AyatoShiratsuchi/test2/blob/3fc848a5807c570c6198cf2daaba0542d7b5eecc/top.png"> 
+      </div>
+      <span class="fa fa-bars menu-icon"></span>
+      <div class="header-right">
+        <a href="#" class="login">これまでのやつ</a>
+      </div>
+    </div>
+  </header>
+  <!-- ここから本編 -->
+  
+  <div class="top-wrapper">
+  
+    <div class="container">
+     
+      <p>備忘録サイトです。<br>なんらかのテキストなんらかのテキストなんらかのテキストなんらかのテキスト。</p>
+							   
+      <button id='click'>Get message from AWS lambda</button>
+  <div id='msg'>
+    <script>
+      const button = document.getElementById('click');
+      button.addEventListener('click', () => {
+        fetch('https://02smunrxph.execute-api.ap-northeast-1.amazonaws.com/dev/API_Gateway')
+          .then(response => {
+            return response.json();
+          })
+          .then(result => {
+            msg.innerText = result['message'];
+          })
+          .catch((e) => {
+            console.log(e)
+          })
+      });
+    </script>
+							   
+    </div>
+  </div>
+							   
+</body>
+</html>
