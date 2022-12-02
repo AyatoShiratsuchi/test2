@@ -29,9 +29,9 @@ a {
 <!-- 上のこいつです！！！！！！！！！！！！！！！ -->
 
 .textarea {
-	width: 400px;  /* 横幅 */
-	height: 300px; /* 高さ */
-	resize:vertical;/* リサイズ縦 */
+	width: 500px;  /* 横幅 */
+	height: 600px; /* 高さ */
+	resize: vertical; /* リサイズ縦 */
 }
 
 .btn--orange,
