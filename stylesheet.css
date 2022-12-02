@@ -28,7 +28,7 @@ a {
 }
 <!-- 上のこいつです！！！！！！！！！！！！！！！ -->
 
-.textarea {
+textarea {
 	width: 400px;  /* 横幅 */
 	height: 400px; /* 高さ */
 	resize: vertical; /* リサイズ縦 */
