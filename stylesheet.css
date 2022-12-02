@@ -29,14 +29,8 @@ a {
 <!-- 上のこいつです！！！！！！！！！！！！！！！ -->
 
 .textarea {
-	width: 500px;  /* 横幅 */
-	height: 600px; /* 高さ */
-	resize: vertical; /* リサイズ縦 */
-}
-
-textarea {
-	width: 500px;  /* 横幅 */
-	height: 600px; /* 高さ */
+	width: 400px;  /* 横幅 */
+	height: 400px; /* 高さ */
 	resize: vertical; /* リサイズ縦 */
 }
 
