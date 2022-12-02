@@ -44,8 +44,25 @@
       <div class="btn-wrapper">
         <a href="#" class="btn signup" cols="120" rows="12">保存する</a>
       </div>
-							   
-    </div>
+        <form>
+          <p>題名: <input type="text" name="title"></p>
+          <p>内容: <input type="text" name="content"></p>
+          <button type="submit">送信</button>
+        </form>
+        <script>
+           <!--// フォームが送信された時の処理 -->
+           document.querySelector('form').addEventListener('submit', function(event) {
+           <!--// フォームデータを取得 -->
+           const formData = new FormData(event.target);
+           <!--// JSONに変換 -->
+           const data = JSON.stringify(Object.fromEntries(formData));
+           <!--// AWSに送信 -->
+           fetch('https://aws.com/endpoint', {
+           method: 'POST',
+           body: data,
+           });
+       </script>						   
+     </div>
   </div>
 							   
 </body>
