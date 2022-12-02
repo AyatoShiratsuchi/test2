@@ -34,6 +34,12 @@ a {
 	resize: vertical; /* リサイズ縦 */
 }
 
+textarea {
+	width: 500px;  /* 横幅 */
+	height: 600px; /* 高さ */
+	resize: vertical; /* リサイズ縦 */
+}
+
 .btn--orange,
 a.btn--orange {
   color: #fff;
@@ -63,19 +69,6 @@ a.btn--orange:hover {
 
 .btn-wrapper p {
   margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
 }
 
 .btn {
