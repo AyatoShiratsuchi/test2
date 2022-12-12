@@ -59,9 +59,9 @@
     </script>
 			  
 	<div id="app">
-        郵便番号
+        題名
         <input v-model="zip" type="text">
-        <button type="button" @click="getAddress">住所は？</button>
+        <button type="button" @click="getAddress">送る</button>
         <div v-for='address in addresses.results'>
             {{address.address1}}{{address.address2}}{{address.address3}}
         </div>
